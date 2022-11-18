@@ -5,4 +5,6 @@
     <string name="home_image_button">Home Image Button</string>
     <string name="refresh_image_button">Refresh Image Button</string>
     <string name="info_image_button">Info Image Button</string>
+    <string name="no_internet_image">No Internet Image</string>
+    <string name="this_application_requires_an_internet_connection_to_work_it_seems_like_you_do_not_have_an_active_network_connection_please_connect_to_the_internet_to_continue">This application requires an internet connection to work. It seems like you do not have an active network connection. Please connect to the internet to continue.</string>
 </resources>
