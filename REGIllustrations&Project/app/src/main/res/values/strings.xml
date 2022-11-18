@@ -1,5 +1,8 @@
 <resources>
-    <string name="app_name">REG Illustrations &amp; Project</string>
-    <string name="reg_logo_txt"><![CDATA[REG Illustrations & Project]]></string>
+    <string name="app_name">REG Project</string>
+    <string name="reg_logo_txt">REG Project</string>
     <string name="re_logo_img">RE logo</string>
+    <string name="home_image_button">Home Image Button</string>
+    <string name="refresh_image_button">Refresh Image Button</string>
+    <string name="info_image_button">Info Image Button</string>
 </resources>
