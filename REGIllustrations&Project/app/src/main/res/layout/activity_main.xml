@@ -11,15 +11,38 @@
         android:id="@+id/webpageNameTxt"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
         android:gravity="center"
         android:textColor="@color/white"
         android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/infoImgBtn"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/homeImgBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Webpage name" />
+
+    <!--    <ImageButton-->
+<!--        android:id="@+id/refreshImgBtn"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="4dp"-->
+<!--        android:layout_marginLeft="4dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        android:layout_marginRight="8dp"-->
+<!--        android:background="@android:color/transparent"-->
+<!--        android:contentDescription="@string/info_image_button"-->
+<!--        android:minWidth="32dp"-->
+<!--        android:minHeight="32dp"-->
+<!--        android:scaleType="fitXY"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/webpageNameTxt"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:srcCompat="@drawable/ic_baseline_refresh_24"-->
+<!--        tools:ignore="TouchTargetSizeCheck" />-->
 
     <ImageButton
         android:id="@+id/homeImgBtn"
@@ -40,28 +63,8 @@
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_baseline_home_24"
-        tools:ignore="TouchTargetSizeCheck" />
-
-    <ImageButton
-        android:id="@+id/infoImgBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginLeft="4dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:background="@android:color/transparent"
-        android:contentDescription="@string/info_image_button"
-        android:minWidth="32dp"
-        android:minHeight="32dp"
-        android:scaleType="fitXY"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/webpageNameTxt"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_baseline_refresh_24"
-        tools:ignore="TouchTargetSizeCheck" />
+        app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24"
+        tools:ignore="TouchTargetSizeCheck,RedundantDescriptionCheck" />
 
     <WebView
         android:id="@+id/webView"
