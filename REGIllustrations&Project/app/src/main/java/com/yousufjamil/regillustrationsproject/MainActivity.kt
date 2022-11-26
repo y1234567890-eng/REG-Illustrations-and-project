@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
 //        }
 
         homeWebBtn.setOnClickListener {
-            webView.loadUrl("https://science-pro.repl.co/")
+            webView.loadUrl("https://ginastic.co/projects/reg-project")
             homeWebBtn.visibility = View.INVISIBLE
         }
 
@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity() {
             ) {
                 super.onReceivedSslError(view, handler, error)
                 val site = Intent(Intent.ACTION_VIEW)
-                site.data = Uri.parse("https://science-pro.repl.co/")
+                site.data = Uri.parse("https://ginastic.co/projects/reg-project")
                 startActivity(site)
             }
 //            override fun onReceivedError(
