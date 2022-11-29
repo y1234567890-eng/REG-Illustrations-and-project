@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
 
         homeWebBtn.visibility = View.INVISIBLE
         loadProgress.visibility = View.INVISIBLE
-        webView.loadUrl("https://science-pro.repl.co/")
+        webView.loadUrl("https://ginastic.co/projects/reg-project/")
 //        webView.loadUrl("https://replit.com/")
         webView.settings.javaScriptEnabled = true
         webView.settings.domStorageEnabled = true
@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
 //        }
 
         homeWebBtn.setOnClickListener {
-            webView.loadUrl("https://ginastic.co/projects/reg-project")
+            webView.loadUrl("https://ginastic.co/projects/reg-project/")
             homeWebBtn.visibility = View.INVISIBLE
         }
 
@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity() {
             ) {
                 super.onReceivedSslError(view, handler, error)
                 val site = Intent(Intent.ACTION_VIEW)
-                site.data = Uri.parse("https://ginastic.co/projects/reg-project")
+                site.data = Uri.parse("https://ginastic.co/projects/reg-project/")
                 startActivity(site)
             }
 //            override fun onReceivedError(
@@ -76,7 +76,7 @@ class MainActivity : AppCompatActivity() {
                 loadProgress.visibility = View.INVISIBLE
                 webViewName.setText(view?.title)
                 webView.setOnTouchListener(View.OnTouchListener { v, event -> false })
-                if (webView.url == "https://science-pro.repl.co/") {
+                if (webView.url == "https://ginastic.co/projects/reg-project/") {
                     homeWebBtn.visibility = View.INVISIBLE
                 } else {
                     homeWebBtn.visibility = View.VISIBLE
